@@ -53,7 +53,7 @@ class Dashboard extends Component {
                   <li class="nav-item">
                     <button className="btn btn-success">
                       <a
-                        href="#"
+                        href="/HPC"
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         All Details
@@ -79,15 +79,15 @@ class Dashboard extends Component {
           <div className="mern">
             <div
               className="row"
-              style={{ marginTop: "6%", marginBottom: "8%", marginLeft: "11%" }}
+              style={{ marginTop: "6%", marginBottom: "8%", marginLeft: "40%" }}
             >
               <div className="col">
                 <div class="card" style={{ width: "18rem" }}>
                   <img src="./StuSign.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
-                    <h5 class="card-title">Create user</h5>
-                    <p>Create new accounts for the necessary users</p>
-                    <a href="/CU" class="btn btn-primary">
+                    <h5 class="card-title">Create Patient Check-in</h5>
+                    <p></p>
+                    <a href="/CPC" class="btn btn-primary">
                       Click Here
                     </a>
                     &nbsp;
@@ -95,32 +95,7 @@ class Dashboard extends Component {
                 </div>
               </div>
 
-              <div className="col">
-                <div class="card" style={{ width: "18rem" }}>
-                  <img src="./allDetails.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">All Details</h5>
-                    <p>View all the details of the users in the system</p>
-                    <a href="/HU" class="btn btn-primary">
-                      Click Here
-                    </a>
-                    &nbsp;
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div class="card" style={{ width: "18rem" }}>
-                  <img src="./sendEmail.jpg" class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">Send Emails</h5>
-                    <p>Send temporary email and password for the users</p>
-                    <a href="/sendmail" class="btn btn-primary">
-                      Click Here
-                    </a>
-                    &nbsp;
-                  </div>
-                </div>
-              </div>
+          
             </div>
           </div>
         </div>

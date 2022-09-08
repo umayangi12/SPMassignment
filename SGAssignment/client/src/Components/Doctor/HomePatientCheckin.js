@@ -51,7 +51,7 @@ export default class HomePatientCheckin extends Component {
   handleSearchArea = (e) => {
     const searchKey = e.currentTarget.value;
 
-    axios.get("/appcheck").then((res) => {
+    axios.get("/pcheck").then((res) => {
       if (res.data.success) {
         this.filterData(res.data.existingPosts, searchKey);
       }
