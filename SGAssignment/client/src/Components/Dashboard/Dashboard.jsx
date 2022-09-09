@@ -60,16 +60,6 @@ class Dashboard extends Component {
                       </a>{" "}
                     </button>
                   </li>
-                  <li class="nav-item">
-                    <button className="btn btn-success">
-                      <a
-                        href="#"
-                        style={{ textDecoration: "none", color: "white" }}
-                      >
-                        Send Email
-                      </a>{" "}
-                    </button>
-                  </li>
                   &nbsp; &nbsp; &nbsp;
                   <li class="nav-item "></li>
                 </ul>
