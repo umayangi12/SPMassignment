@@ -10,21 +10,22 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./redux/actions/authAction1";
 import PrivateRoute from "./Components/private-route/PrivateRoute";
 import Footer from "./Components/Footer/Footer";
-import Login1 from "./Components/Auth/Login1";
-import Dashboard1 from "./Components/Dashboard/Dashboard1";
-import Register1 from "./Components/Auth/Register1";
 import LoginDashboard from "./Components/Dashboard/LoginDashboard";
+import Home from "./Components/Home/Home";
+
 import CreateAppBooking from "./Components/Patient/CreateAppBooking";
 import EditAppBooking from "./Components/Patient/EditAppBooking";
 import HomeAppBooking from "./Components/Patient/HomeAppBooking";
 import AppBookingDetails from "./Components/Patient/AppBookingDetails";
-import Register2 from "./Components/Auth/Register2";
-import Login2 from "./Components/Auth/Login2";
 import CreatePatientCheckin from "./Components/Doctor/CreatePatientCheckin";
 import EditPatientCheckin from "./Components/Doctor/EditPatientCheckin";
 import HomePatientCheckin from "./Components/Doctor/HomePatientCheckin";
+import Login1 from "./Components/Auth/Login1";
+import Register2 from "./Components/Auth/Register2";
+import Register1 from "./Components/Auth/Register1";
+import Login2 from "./Components/Auth/Login2";
 import Dashboard2 from "./Components/Dashboard/Dashboard2";
-import HomePage from "./Components/Home/Home";
+import Dashboard1 from "./Components/Dashboard/Dashboard1";
 
 
 function App() {
@@ -53,16 +54,16 @@ function App() {
         <Navbar />
         
         <Switch>
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/" component={Home} />
 
           <Route path="/login1" component={Login1}></Route>
-          <Route path ="/login2" component={Login2}></Route>
+          <Route path="/register2" component={Register2} />
           <Route path="/register1" component={Register1} />
-          <Route path ="/register2" component={Register2}></Route>
+          <Route path="/login2" component={Login2} />
 
-        
           <Route path="/loginDash" component={LoginDashboard}></Route>
-         
+
+
 
           <Route path ="/CAB" component={CreateAppBooking}></Route>
           <Route path ="/UAB/:id" component={EditAppBooking}></Route>
@@ -70,10 +71,13 @@ function App() {
           <Route path = "/ABD" component={AppBookingDetails}></Route>
 
 
+
+
           <Route path ="/CPC" component={CreatePatientCheckin}></Route>
           <Route path = "/UPC/:id" component={EditPatientCheckin}></Route>
           <Route path ="/HPC" component={HomePatientCheckin}></Route>
 
+          
 
           <Switch>
             <PrivateRoute exact path="/dashboard1" component={Dashboard1} />

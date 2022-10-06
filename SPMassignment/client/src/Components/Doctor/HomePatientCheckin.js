@@ -143,6 +143,13 @@ export default class HomePatientCheckin extends Component {
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }

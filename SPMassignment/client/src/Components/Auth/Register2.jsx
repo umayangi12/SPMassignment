@@ -208,5 +208,5 @@ const mapStateToProps = (state) => ({
   errors: state.errors,
 });
 export default connect(mapStateToProps, { registerUser2 })(
-  withRouter(Register1)
+  withRouter(Register2)
 );

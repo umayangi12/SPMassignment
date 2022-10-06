@@ -8,11 +8,11 @@ class LoginDashboard extends Component {
           className="row"
           style={{ marginTop: "6%", marginBottom: "8%", marginLeft: "15%" }}
         >
-          <div className="col">
+          <div className="col doctorl" >
             <div class="card" style={{ width: "18rem" }}>
-              <img src="./AdminSign.jpg" class="card-img-top" alt="..." />
+              <img src="./doctorlogin.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Doctor</h5>
+                <h5 class="card-title">Doctor Login</h5>
                 <br />
                 <br />
                 <a href="/login" class="btn btn-primary">
@@ -28,9 +28,9 @@ class LoginDashboard extends Component {
 
           <div className="col">
             <div class="card" style={{ width: "18rem" }}>
-              <img src="./std.jpg" class="card-img-top" alt="..." />
+              <img src="./patientlogin.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Patient</h5>
+                <h5 class="card-title">Patient Login</h5>
                 <br />
                 <br />
                 <a href="/login1" class="btn btn-primary">
@@ -46,16 +46,16 @@ class LoginDashboard extends Component {
 
           <div className="col">
             <div class="card" style={{ width: "18rem" }}>
-              <img src="./AdminSign.jpg" class="card-img-top" alt="..." />
+              <img src="./pharmacylogin.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Pharmacy</h5>
+                <h5 class="card-title">Pharmacy Login</h5>
                 <br />
                 <br />
-                <a href="/login2" class="btn btn-primary">
+                <a href="" class="btn btn-primary">
                   Login
                 </a>
                 &nbsp;
-                <a href="/register2" class="btn btn-success">
+                <a href="" class="btn btn-success">
                   SignUp
                 </a>
               </div>

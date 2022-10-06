@@ -108,7 +108,7 @@ export default class EditPatientCheckin extends Component {
           </div>
         </nav>
         <div className="card2">
-          <div className="card" style={{ width: "65rem" }}>
+          <div className="card" style={{ width: "65rem", marginLeft:'6%' }}>
             <div class="card-body">
               <form>
                 <br />
@@ -144,7 +144,7 @@ export default class EditPatientCheckin extends Component {
                 <div className="form-group" style={{ marginBottom: "15px" }}>
                   <lable style={{ marginBottom: "5px" }}>Date</lable>
                   <input
-                    type="ddate"
+                    type="date"
                     className="form-control"
                     name="date"
                     placeholder="Choose date"
@@ -174,6 +174,7 @@ export default class EditPatientCheckin extends Component {
                     onChange={this.handleInputChange}
                   />
                 </div>
+                <h3>Prescriptions</h3>
                 <div className="form-group" style={{ marginBottom: "15px" }}>
                   <lable style={{ marginBottom: "5px" }}>Panadol</lable>
                   <select
@@ -218,7 +219,7 @@ export default class EditPatientCheckin extends Component {
                 </div>
                 <div className="form-group" style={{ marginBottom: "15px" }}>
                   <lable style={{ marginBottom: "5px" }}>Other</lable>
-                  <input
+                  <textarea
                     type="text"
                     className="form-control"
                     name="med4"

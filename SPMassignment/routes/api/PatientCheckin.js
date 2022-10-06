@@ -13,7 +13,6 @@ router.post("/pcheck/save", (req, res) => {
         error: err,
       });
     }
-
     return res.status(200).json({
       success: "Details saved Successfully",
     });

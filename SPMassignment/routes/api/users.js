@@ -9,10 +9,10 @@ const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 
 // Load User model
-const User = require("../../models/Login2");
+const User = require("../../models/User");
 
 //Post Router api/users/register
-Router.post("/register2", (req, res) => {
+Router.post("/register", (req, res) => {
   //Form Validation
   //Destructuring Values
   const { errors, isValid } = validateRegisterInput(req.body);
@@ -30,10 +30,11 @@ Router.post("/register2", (req, res) => {
         email: "Email already exists",
       });
     } else {
-      const newUser = new User({ //getting email,passowrd, and name entere by the user.
+      const newUser = new User({
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
+        role: req.body.role,
       });
 
       //Hash password before saving in database
@@ -56,7 +57,7 @@ Router.post("/register2", (req, res) => {
 
 //Post Router api/users/login
 
-Router.post("/login2", (req, res) => {
+Router.post("/login", (req, res) => {
   //Login Validation
   const { errors, isValid } = validateLoginInput(req.body);
 
@@ -93,7 +94,7 @@ Router.post("/login2", (req, res) => {
         //information that needs to be places into the payload
         jwt.sign(
           payload,
-          config.get("secretOrKey"),
+          config.get("secretOrKey"), 
           {
             expiresIn: 63113852, //2 years in seconds    ‬
           },

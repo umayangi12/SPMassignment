@@ -68,7 +68,7 @@ export default class CreatePatientCheckin extends Component {
       swal("Please fill all the details");
     } else {
       Axios.post("/pcheck/save", data).then((res) => {
-        let path = "/CPC";
+        let path = "/HPC";
         if (res.data.success) {
           alert("Details saved Successfully");
           this.props.history.push(path);
@@ -177,6 +177,7 @@ export default class CreatePatientCheckin extends Component {
                     onChange={this.handleInputChange}
                   />
                 </div>
+                <h3>Prescriptions</h3>
                 <div
                   className="form-group col-md-6"
                   style={{ marginBottom: "15px", marginLeft: "-1.5%" }}
@@ -230,7 +231,7 @@ export default class CreatePatientCheckin extends Component {
                 </div>
                 <div className="form-group" style={{ marginBottom: "15px" }}>
                   <lable style={{ marginBottom: "5px" }}>Other</lable>
-                  <input
+                  <textarea
                     type="text"
                     className="form-control"
                     name="med4"
