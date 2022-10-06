@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import axios from "axios";
+
 
 class Navbar extends Component {
   constructor(props) {
@@ -12,39 +12,6 @@ class Navbar extends Component {
     };
   }
 
-  componentDidMount() {
-    this.retrivePosts();
-  }
-
-  retrivePosts() {
-    axios.get("/movieTo").then((res) => {
-      if (res.data.success) {
-        this.setState({
-          posts: res.data.existingPosts,
-        });
-        console.log(this.state.posts);
-      }
-    });
-  }
-
-  filterData(posts, searchKey) {
-    const result = posts.filter(
-      (post) =>
-        post.Fname.toLowerCase().includes(searchKey) ||
-        post.Flanguage.toLowerCase().includes(searchKey)
-    );
-    this.setState({ posts: result });
-  }
-
-  handleSearchArea = (e) => {
-    const searchKey = e.currentTarget.value;
-
-    axios.get("/movieTo").then((res) => {
-      if (res.data.success) {
-        this.filterData(res.data.existingPosts, searchKey);
-      }
-    });
-  };
   render() {
     return (
       <div>
@@ -97,7 +64,7 @@ class Navbar extends Component {
               <li class="nav-item">
                 <Link
                   className="nav-link btn btn-register button-outline-none"
-                  to="/register"
+                  to="/register1"
                 >
                   Signup
                 </Link>

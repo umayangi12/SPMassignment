@@ -44,7 +44,7 @@ function App() {
     if (decoded.exp < currentTime) {
       // Logout user
       store.dispatch(logoutUser()); // Redirect to login
-      window.location.href = "./login";
+      window.location.href = "./login1";
     }
   }
 

@@ -1,11 +1,10 @@
 const express = require("express");
-const PatientCheckin = require("../../models/PatientCheckin");
+const UserH = require("../../models/Login1");
 
 const router = express.Router();
 
-//save appointment
-router.post("/pcheck/save", (req, res) => {
-  let newPost = new PatientCheckin(req.body);
+router.post("/user/save", (req, res) => {
+  let newPost = new UserH(req.body);
 
   newPost.save((err) => {
     if (err) {
@@ -15,14 +14,13 @@ router.post("/pcheck/save", (req, res) => {
     }
 
     return res.status(200).json({
-      success: "Details saved Successfully",
+      success: "Data Saved Successfully",
     });
   });
 });
 
-//get appointments
-router.get("/pcheck", (req, res) => {
-  PatientCheckin.find().exec((err, posts) => {
+router.get("/user", (req, res) => {
+  UserH.find().exec((err, posts) => {
     if (err) {
       return res.status(400).json({
         error: err,
@@ -35,11 +33,10 @@ router.get("/pcheck", (req, res) => {
   });
 });
 
-//get a specific appointment
-router.get("/pcheck/:id", (req, res) => {
+router.get("/user/:id", (req, res) => {
   let postId = req.params.id;
 
-  PatientCheckin.findById(postId, (err, post) => {
+  UserH.findById(postId, (err, post) => {
     if (err) {
       return res.status(400).json({ success: false, err });
     }
@@ -51,9 +48,8 @@ router.get("/pcheck/:id", (req, res) => {
   });
 });
 
-//update appointment
-router.put("/pcheck/update/:id", (req, res) => {
-  PatientCheckin.findByIdAndUpdate(
+router.put("/user/update/:id", (req, res) => {
+  UserH.findByIdAndUpdate(
     req.params.id,
     {
       $set: req.body,
@@ -69,9 +65,8 @@ router.put("/pcheck/update/:id", (req, res) => {
   );
 });
 
-//delete notes
-router.delete("/pcheck/delete/:id", (req, res) => {
-  PatientCheckin.findByIdAndRemove(req.params.id).exec((err, deletedpost) => {
+router.delete("/user/delete/:id", (req, res) => {
+  UserH.findByIdAndRemove(req.params.id).exec((err, deletedpost) => {
     if (err)
       return res.status(400).json({
         message: "Delete Unsuccesfull",

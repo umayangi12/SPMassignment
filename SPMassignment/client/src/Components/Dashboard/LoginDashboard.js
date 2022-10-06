@@ -15,11 +15,11 @@ class LoginDashboard extends Component {
                 <h5 class="card-title">Doctor Login</h5>
                 <br />
                 <br />
-                <a href="/login" class="btn btn-primary">
+                <a href="/login1" class="btn btn-primary">
                   Login
                 </a>
                 &nbsp;
-                <a href="/register" class="btn btn-success">
+                <a href="/register1" class="btn btn-success">
                   SignUp
                 </a>
               </div>
@@ -33,11 +33,11 @@ class LoginDashboard extends Component {
                 <h5 class="card-title">Patient Login</h5>
                 <br />
                 <br />
-                <a href="/login1" class="btn btn-primary">
+                <a href="/login2" class="btn btn-primary">
                   Login
                 </a>
                 &nbsp;
-                <a href="/register1" class="btn btn-success">
+                <a href="/register2" class="btn btn-success">
                   SignUp
                 </a>
               </div>
