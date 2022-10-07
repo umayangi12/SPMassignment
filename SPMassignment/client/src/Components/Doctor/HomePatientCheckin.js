@@ -76,16 +76,17 @@ export default class HomePatientCheckin extends Component {
                 Search
               </button>
             </form>
-            <br />
-            <br />
-            <br />
 
             <a class="navbar-brand" href="#"></a>
           </div>
         </nav>
-
-        <table class="table">
-          <thead>
+        <br/>
+        <center>
+          <h1><span class="badge  text-dark opacity-90 fs-3" style={{ marginBlockStart: '-1%' }}>All Patient Check-In Details</span></h1>
+        </center>
+        <br/>
+        <table id="my-table" class="table">
+          <thead class="table-info">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Patient Name</th>
@@ -133,6 +134,7 @@ export default class HomePatientCheckin extends Component {
             ))}
           </tbody>
         </table>
+        <br/>
         <center>
           <button className="btn btn-success">
             <a href="/CPC" style={{ textDecoration: "none", color: "white" }}>

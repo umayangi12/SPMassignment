@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable'
 
 export default class DoctorReport extends Component {
   constructor(props) {
@@ -25,13 +26,6 @@ export default class DoctorReport extends Component {
       }
     });
   }
-
-//   onDelete = (id) => {
-//     axios.delete(`/pcheck/delete/${id}`).then((res) => {
-//       alert("Delete Successfully");
-//       this.retrivePosts();
-//     });
-//   };
 
   filterData(posts, searchKey) {
     const result = posts.filter(
@@ -68,7 +62,7 @@ export default class DoctorReport extends Component {
 
             // Header
             doc.setFontSize(14);
-            var fileTitle = "Payment Report";
+            var fileTitle = "Patients Report";
             var img = 'https://i.ibb.co/gdr6KYs/Final-cut.jpg';
             doc.text(fileTitle, 30, 250);
             doc.addImage(img, 'JPEG', 2, 2, 628, 200);
@@ -104,7 +98,7 @@ export default class DoctorReport extends Component {
         doc.putTotalPages(totalPagesExp);
     }
 
-    doc.save('Payment Report.pdf'); //this downloads a copy of the pdf in your local instance.
+    doc.save('Patients Report.pdf'); //this downloads a copy of the pdf in your local instance.
 };
 
 
@@ -126,16 +120,17 @@ export default class DoctorReport extends Component {
                 Search
               </button>
             </form>
-            <br />
-            <br />
-            <br />
 
             <a class="navbar-brand" href="#"></a>
           </div>
         </nav>
 
-        <table class="table">
-          <thead>
+        <center>
+          <h1><span class="badge  text-dark opacity-90 fs-3" style={{ marginBlockStart: '-3%' }}>Patient Report</span></h1>
+        </center>
+
+        <table id="my-table" class=" container table table-bordered ">
+          <thead class="table-info">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Patient Name</th>
@@ -169,15 +164,16 @@ export default class DoctorReport extends Component {
           </tbody>
         </table>
         <center>
-          <button className="btn btn-warning text-dark">
-            <a  onClick={this.createPdf}>
-            <i className="fa fa-file-pdf-o"></i>&nbsp;Download PDF
-            </a>
-          </button>
-          &nbsp;
-                  <a className="btn btn-warning text-dark " href="" >
+          <button className="btn btn-warning text-dark " >
+        <a onClick={this.createPdf}>
+                  <i className="fa fa-file-pdf-o"></i>&nbsp;Download PDF
+                  </a>
+                  </button>
+                  &nbsp;
+                  <a className="btn btn-warning text-dark " href="/dashboard1" >
                     Dash Board
                   </a>
+                  
         </center>
         <br />
         <br />

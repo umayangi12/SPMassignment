@@ -27,10 +27,8 @@ class Dashboard1 extends Component {
           <center>
             <h1 className="backw1">Doctor Dashboard</h1>
           </center>
-          <img className="backw" src="./admin.jpg" />
-          <img className="backwo" src="./admin.jpg" />
           <button
-            style={{ marginLeft: "90%", marginTop: "-14%" }}
+            style={{ marginLeft: "90%", marginTop: "-8%" }}
             onClick={this.onLogoutClick}
             className="btn btn-lg btn-warning "
           >
@@ -70,11 +68,11 @@ class Dashboard1 extends Component {
           <div className="mern">
             <div
               className="row"
-              style={{ marginTop: "6%", marginBottom: "8%", marginLeft: "40%" }}
+              style={{ marginTop: "6%", marginBottom: "8%", marginLeft: "18%" }}
             >
               <div className="col">
                 <div class="card" style={{ width: "18rem" }}>
-                  <img src="./StuSign.jpg" class="card-img-top" alt="..." />
+                  <img src="./doctorcheking.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Create Patient Check-in</h5>
                     <p></p>
@@ -88,9 +86,9 @@ class Dashboard1 extends Component {
 
               <div className="col">
                 <div class="card" style={{ width: "18rem" }}>
-                  <img src="./StuSign.jpg" class="card-img-top" alt="..." />
+                  <img src="./report.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
-                    <h5 class="card-title">Patients Report</h5>
+                    <h5 class="card-title">Patient Checking-in Report</h5>
                     <p></p>
                     <a href="/DR" class="btn btn-primary">
                       Click Here
