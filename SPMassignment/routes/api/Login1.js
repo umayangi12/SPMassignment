@@ -9,7 +9,7 @@ const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 
 // Load User model
-const User = require("../../models/Login1");
+const Login1 = require("../../models/Login1");
 
 //Post Router api/users/register
 Router.post("/register1", (req, res) => {
@@ -22,7 +22,7 @@ Router.post("/register1", (req, res) => {
     return res.status(400).json(errors);
   }
 
-  User.findOne({
+  Login1.findOne({
     email: req.body.email,
   }).then((user) => {
     if (user) {
@@ -30,7 +30,7 @@ Router.post("/register1", (req, res) => {
         email: "Email already exists",
       });
     } else {
-      const newUser = new User({
+      const newUser = new Login1({
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
@@ -70,7 +70,7 @@ Router.post("/login1", (req, res) => {
   const password = req.body.password;
 
   //Find User By Email
-  User.findOne({
+  Login1.findOne({
     email: email,
   }).then((user) => {
     //Check if Your Exists
