@@ -89,26 +89,37 @@ export default class EditPatientCheckin extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar b">
-          <div class="container">
-            <form class="d-flex nav1 " role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                onChange={this.handleSearchArea}
-              ></input>
-              &nbsp;
-              <button class="btn btn-outline-warning " type="submit">
-                Search
-              </button>
-            </form>
-            <a class="navbar-brand" href="#"></a>
+        <nav class="navbar navbar-expand-lg nav" >
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <div>
+                    <button className="btn btn-success">
+                      <a
+                        href="/HPC"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        All Details
+                      </a>
+                    </button>
+
+                    <button className="btn btn-success">
+                      <a
+                        href="/dashboard1"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        Dashboard
+                      </a>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
         <div className="card2">
-          <div className="card" style={{ width: "65rem", marginLeft:'6%' }}>
+          <div className="card" style={{ width: "65rem", marginLeft: '6%' }}>
             <div class="card-body">
               <form>
                 <br />

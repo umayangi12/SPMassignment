@@ -44,7 +44,7 @@ export default class CreatePatientCheckin extends Component {
       med4: med4,
     };
     console.log(data);
-  
+
     //phone number validation
     const ph = /^[0-9\b]+$/;
     if (!ph.test(String(phone)) || phone.length != 10) {
@@ -53,7 +53,7 @@ export default class CreatePatientCheckin extends Component {
         "contact number should be valid pattern",
         "error"
       );
-      
+
     } else if (
       paname.length === 0 ||
       diagnose.length === 0 ||
@@ -90,7 +90,7 @@ export default class CreatePatientCheckin extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg nav" style={{ marginTop: "5%" }}>
+        <nav class="navbar navbar-expand-lg nav" >
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ">
@@ -101,8 +101,17 @@ export default class CreatePatientCheckin extends Component {
                         href="/HPC"
                         style={{ textDecoration: "none", color: "white" }}
                       >
-                        Details
-                      </a>{" "}
+                        All Details
+                      </a>
+                    </button>
+
+                    <button className="btn btn-success">
+                      <a
+                        href="/dashboard1"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        Dashboard
+                      </a>
                     </button>
                   </div>
                 </li>

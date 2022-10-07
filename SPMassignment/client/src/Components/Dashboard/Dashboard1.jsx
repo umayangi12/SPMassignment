@@ -24,20 +24,15 @@ class Dashboard1 extends Component {
     return (
       <div>
         <div>
-          <center>
-            <h1 className="backw1">Doctor Dashboard</h1>
-          </center>
-          <button
-            style={{ marginLeft: "90%", marginTop: "-8%" }}
-            onClick={this.onLogoutClick}
-            className="btn btn-lg btn-warning "
-          >
-            Logout
-          </button>
+          
+     
           <nav class="navbar navbar-expand-lg nav">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ">
+                <li>
+                  <h1 className="backw1 ">Doctor Dashboard</h1>
+                  </li>
                   <li class="nav-item">
                     <button className="btn btn-success">
                       <a
@@ -45,7 +40,7 @@ class Dashboard1 extends Component {
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         Patient Check-in
-                      </a>{" "}
+                      </a>
                     </button>
                   </li>
                   <li class="nav-item">
@@ -55,11 +50,20 @@ class Dashboard1 extends Component {
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         All Details
-                      </a>{" "}
+                      </a>
                     </button>
                   </li>
+            
                   &nbsp; &nbsp; &nbsp;
-                  <li class="nav-item "></li>
+                  <li class="nav-item ">
+                <button style={{marginLeft:'471%'}}
+            
+            onClick={this.onLogoutClick}
+            className="btn btn-lg btn-warning "
+          >
+            Logout
+          </button>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -77,14 +77,22 @@ export default class HomePatientCheckin extends Component {
               </button>
             </form>
 
+            <button className="btn btn-success" style={{ marginLeft: '17%' }}>
+              <a
+                href="/dashboard1"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Dashboard
+              </a>
+            </button>
             <a class="navbar-brand" href="#"></a>
           </div>
         </nav>
-        <br/>
+        <br />
         <center>
           <h1><span class="badge  text-dark opacity-90 fs-3" style={{ marginBlockStart: '-1%' }}>All Patient Check-In Details</span></h1>
         </center>
-        <br/>
+        <br />
         <table id="my-table" class="table">
           <thead class="table-info">
             <tr>
@@ -134,7 +142,7 @@ export default class HomePatientCheckin extends Component {
             ))}
           </tbody>
         </table>
-        <br/>
+        <br />
         <center>
           <button className="btn btn-success">
             <a href="/CPC" style={{ textDecoration: "none", color: "white" }}>

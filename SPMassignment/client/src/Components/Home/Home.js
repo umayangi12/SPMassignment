@@ -107,7 +107,7 @@ export default class Home extends Component {
             <div class="hero-container ">
               <div class="main-container">
                 <div class="poster-container">
-                  <a href="#"><img src="./ConciergeService.jpg" class="poster" /></a>
+                  <a href="#"><img src="./concierge.jpg" class="poster" /></a>
                 </div>
                 <div class="ticket-container">
                   <div class="ticket__content">

@@ -226,7 +226,7 @@ a:link {
 .ticket__buy-btn {
   cursor: pointer;
   width: 100%;
-  background: blue;
+  background: yellow;
   color: black;
   padding: 15px 0;
   font-size: 1rem;

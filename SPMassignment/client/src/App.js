@@ -27,6 +27,7 @@ import Login2 from "./Components/Auth/Login2";
 import Dashboard2 from "./Components/Dashboard/Dashboard2";
 import Dashboard1 from "./Components/Dashboard/Dashboard1";
 import DoctorReport from "./Components/Doctor/DoctorReport";
+import Navbar1 from "./Components/Navbar/Navbar1";
 
 
 function App() {
@@ -52,7 +53,12 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
+      
         <Navbar />
+        <div style={{marginTop: '3%'}}>
+        <Navbar1 />
+        </div>
+
         
         <Switch>
           <Route exact path="/" component={Home} />

@@ -18,7 +18,7 @@ export default class Footer extends Component {
                 <a href="#">Resources</a>
               </li>
               <li>
-                <a href="#">Student Support</a>
+                <a href="#">Support Service</a>
               </li>
             </ul>
 
