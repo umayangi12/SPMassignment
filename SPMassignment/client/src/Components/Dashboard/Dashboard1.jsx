@@ -66,6 +66,7 @@ class Dashboard1 extends Component {
               </div>
             </div>
           </nav>
+
           <div className="mern">
             <div
               className="row"
@@ -85,7 +86,21 @@ class Dashboard1 extends Component {
                 </div>
               </div>
 
-          
+              <div className="col">
+                <div class="card" style={{ width: "18rem" }}>
+                  <img src="./StuSign.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Patients Report</h5>
+                    <p></p>
+                    <a href="/DR" class="btn btn-primary">
+                      Click Here
+                    </a>
+                    &nbsp;
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>

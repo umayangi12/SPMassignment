@@ -26,6 +26,7 @@ import Register1 from "./Components/Auth/Register1";
 import Login2 from "./Components/Auth/Login2";
 import Dashboard2 from "./Components/Dashboard/Dashboard2";
 import Dashboard1 from "./Components/Dashboard/Dashboard1";
+import DoctorReport from "./Components/Doctor/DoctorReport";
 
 
 function App() {
@@ -76,6 +77,8 @@ function App() {
           <Route path ="/CPC" component={CreatePatientCheckin}></Route>
           <Route path = "/UPC/:id" component={EditPatientCheckin}></Route>
           <Route path ="/HPC" component={HomePatientCheckin}></Route>
+          <Route path ="/DR" component={DoctorReport}></Route>
+          
 
           
 
