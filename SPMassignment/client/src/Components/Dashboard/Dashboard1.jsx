@@ -49,14 +49,24 @@ class Dashboard1 extends Component {
                         href="/HPC"
                         style={{ textDecoration: "none", color: "white" }}
                       >
-                        All Details
+                        All Details Patient Check-in
+                      </a>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button className="btn btn-success">
+                      <a
+                        href="/PDS"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        Appointment Details
                       </a>
                     </button>
                   </li>
             
                   &nbsp; &nbsp; &nbsp;
                   <li class="nav-item ">
-                <button style={{marginLeft:'471%'}}
+                <button style={{marginLeft:'215%'}}
             
             onClick={this.onLogoutClick}
             className="btn btn-lg btn-warning "

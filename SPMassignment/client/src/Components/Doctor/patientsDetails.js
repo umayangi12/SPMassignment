@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-export default class HomeAppBooking extends Component {
+export default class patientsDetails extends Component {
   constructor(props) {
     super(props);
 
@@ -24,13 +24,6 @@ export default class HomeAppBooking extends Component {
       }
     });
   }
-
-  onDelete = (id) => {
-    axios.delete(`/appbooking/delete/${id}`).then((res) => {
-      alert("Delete Successfully");
-      this.retrivePosts();
-    });
-  };
 
   filterData(posts, searchKey) {
     const result = posts.filter(
@@ -76,7 +69,7 @@ export default class HomeAppBooking extends Component {
             </form>
             <button className="btn btn-success" style={{ marginLeft: "17%" }}>
               <a
-                href="/dashboard2"
+                href="/dashboard1"
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Dashboard
@@ -108,47 +101,23 @@ export default class HomeAppBooking extends Component {
               <th scope="col">Email</th>
               <th scope="col">NIC/Passport</th>
               <th scope="col">Area</th>
-              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
             {this.state.posts.map((posts, index) => (
               <tr>
                 <th scope="row">{index + 1}</th>
-                <td> {posts.title}</td>
-                <td>{posts.pname}</td>
+                <td> <a href="/CPC">{posts.title}</a></td>
+                <td> <a href="/CPC">{posts.pname}</a></td>
                 <td>{posts.mobile}</td>
                 <td>{posts.date}</td>
                 <td>{posts.email}</td>
                 <td>{posts.nicpass}</td>
                 <td>{posts.area}</td>
-                <td>
-                  <a
-                    className="btn btn-warning text-dark"
-                    href={`/UAB/${posts._id}`}
-                  >
-                    <i className="fas fa-edit"></i>&nbsp; Edit
-                  </a>
-                  &nbsp; &nbsp;
-                  <a
-                    className="btn btn-danger text-dark "
-                    href="#"
-                    onClick={() => this.onDelete(posts._id)}
-                  >
-                    <i className="far fa-trash-alt"></i>&nbsp;Delete
-                  </a>
-                </td>
               </tr>
             ))}
           </tbody>
         </table>
-        <center>
-          <button className="btn btn-success">
-            <a href="/CAB" style={{ textDecoration: "none", color: "white" }}>
-              Add My Appointments{" "}
-            </a>{" "}
-          </button>
-        </center>
         <br />
         <br />
         <br />

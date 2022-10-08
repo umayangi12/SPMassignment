@@ -125,7 +125,7 @@ export default class CreatePatientCheckin extends Component {
               <form>
                 <br />
                 <center>
-                  <h1 className="anm">My Patient Check-ins</h1>
+                  <h1 className="anm">Patient Check-ins</h1>
                 </center>
                 <br />
                 <br />

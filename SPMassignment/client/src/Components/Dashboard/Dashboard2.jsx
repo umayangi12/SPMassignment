@@ -24,8 +24,6 @@ class Dashboard2 extends Component {
     return (
       <div>
         <div>
-          <img className="backw2" src="./student.jpg" />
-          <img className="backwo2" src="./student.jpg" />
           <nav class="navbar navbar-expand-lg nav">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNav">
