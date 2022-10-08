@@ -88,7 +88,7 @@ export default class EditAppBooking extends Component {
                   <div>
                     <button className="btn btn-success">
                       <a
-                        href="/ABD"
+                        href="/HAB"
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         All Details
