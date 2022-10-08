@@ -5,6 +5,15 @@ import { logoutUser } from "../../redux/actions/authAction2";
 import "./Dashboard.css";
 
 class Dashboard2 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isShown: true,
+    };
+  }
+
+  toggleIsShown = () => this.setState(({ isShown }) => ({ isShown: !isShown }));
+
   onLogoutClick = (e) => {
     e.preventDefault();
     this.props.logoutUser();
@@ -15,30 +24,43 @@ class Dashboard2 extends Component {
     return (
       <div>
         <div>
-          <button
-            style={{ marginLeft: "90%", marginTop: "2.5%" }}
-            onClick={this.onLogoutClick}
-            className="btn btn-lg btn-warning "
-          >
-            Logout
-          </button>
-          <center>
-            <h1 className="backw12">Patient Dashboard</h1>
-          </center>
           <img className="backw2" src="./student.jpg" />
           <img className="backwo2" src="./student.jpg" />
-          <nav class="navbar navbar-expand-lg  hn311 nav">
+          <nav class="navbar navbar-expand-lg nav">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ">
+                  <li>
+                    <h1 className="backw1 ">Patient Dashboard</h1>
+                  </li>
                   <li class="nav-item">
                     <button className="btn btn-success">
                       <a
                         href="/CAB"
                         style={{ textDecoration: "none", color: "white" }}
                       >
-                        App appointment
-                      </a>{" "}
+                        App Booking
+                      </a>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button className="btn btn-success">
+                      <a
+                        href="/ABD"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        All Details
+                      </a>
+                    </button>
+                  </li>
+                  &nbsp; &nbsp; &nbsp;
+                  <li class="nav-item ">
+                    <button
+                      style={{ marginLeft: "471%" }}
+                      onClick={this.onLogoutClick}
+                      className="btn btn-lg btn-warning "
+                    >
+                      Logout
                     </button>
                   </li>
                 </ul>
@@ -49,11 +71,11 @@ class Dashboard2 extends Component {
           <div className="mern">
             <div
               className="row"
-              style={{ marginTop: "6%", marginBottom: "2%", marginLeft: "37%" }}
+              style={{ marginTop: "6%", marginBottom: "8%", marginLeft: "18%" }}
             >
               <div className="col">
                 <div class="card" style={{ width: "18rem" }}>
-                  <img src="" class="card-img-top" alt="..." />
+                  <img src="./app.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Add Appointment</h5>
                     <p></p>
@@ -64,17 +86,10 @@ class Dashboard2 extends Component {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div className="mern">
-            <div
-              className="row"
-              style={{ marginTop: "6%", marginBottom: "2%", marginLeft: "37%" }}
-            >
               <div className="col">
                 <div class="card" style={{ width: "18rem" }}>
-                  <img src="" class="card-img-top" alt="..." />
+                  <img src="./report.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Booking Report</h5>
                     <p></p>
