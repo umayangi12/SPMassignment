@@ -47,7 +47,7 @@ class Navbar extends Component {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link navtext1" href="#">
+                  <a class="nav-link navtext1" href="/contactus">
                     Contact Us
                   </a>
                 </li>

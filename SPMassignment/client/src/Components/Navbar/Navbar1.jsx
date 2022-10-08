@@ -25,7 +25,7 @@ class Navbar1 extends Component {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="fs-4 nav-link text-primary " aria-current="page" >HOSPITAL</a>
-              <a class="fs-4 nav-link " href="https://call2friends.com/free-calls">011-1234567</a>
+              <a class="fs-4 nav-link " href="https://call2friends.com/free-calls">011-1233459</a>
 
               <a class="fs-4 nav-link text-primary" aria-current="page"> | </a>
 
