@@ -62,8 +62,8 @@ export default class DoctorReport extends Component {
 
         // Header
         doc.setFontSize(14);
-        var fileTitle = "Patients Report";
-        var img = 'https://i.ibb.co/gdr6KYs/Final-cut.jpg';
+        var fileTitle = "Patient Check-in Report";
+        var img = './Reportimg.jpg';
         doc.text(fileTitle, 30, 250);
         doc.addImage(img, 'JPEG', 2, 2, 628, 200);
 
@@ -98,7 +98,7 @@ export default class DoctorReport extends Component {
       doc.putTotalPages(totalPagesExp);
     }
 
-    doc.save('Patients Report.pdf'); //this downloads a copy of the pdf in your local instance.
+    doc.save('Patient Check-in Report.pdf'); //this downloads a copy of the pdf in your local instance.
   };
 
 
