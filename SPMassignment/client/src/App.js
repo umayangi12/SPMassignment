@@ -28,6 +28,7 @@ import Dashboard1 from "./Components/Dashboard/Dashboard1";
 import DoctorReport from "./Components/Doctor/DoctorReport";
 import Navbar1 from "./Components/Navbar/Navbar1";
 import BookingReport from "./Components/Patient/BookingReport";
+import patientsDetails from "./Components/Doctor/patientsDetails";
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
           <Route path = "/UPC/:id" component={EditPatientCheckin}></Route>
           <Route path ="/HPC" component={HomePatientCheckin}></Route>
           <Route path ="/DR" component={DoctorReport}></Route>
+          <Route path ="/PDS" component={patientsDetails}></Route>
           
 
           
