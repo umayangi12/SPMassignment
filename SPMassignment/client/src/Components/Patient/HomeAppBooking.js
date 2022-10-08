@@ -107,6 +107,7 @@ export default class HomeAppBooking extends Component {
               <th scope="col">Date</th>
               <th scope="col">Email</th>
               <th scope="col">NIC/Passport</th>
+              <th scope="col">Area</th>
               <th scope="col">Action</th>
             </tr>
           </thead>

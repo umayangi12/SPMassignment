@@ -16,7 +16,6 @@ import Home from "./Components/Home/Home";
 import CreateAppBooking from "./Components/Patient/CreateAppBooking";
 import EditAppBooking from "./Components/Patient/EditAppBooking";
 import HomeAppBooking from "./Components/Patient/HomeAppBooking";
-import AppBookingDetails from "./Components/Patient/AppBookingDetails";
 import CreatePatientCheckin from "./Components/Doctor/CreatePatientCheckin";
 import EditPatientCheckin from "./Components/Doctor/EditPatientCheckin";
 import HomePatientCheckin from "./Components/Doctor/HomePatientCheckin";
@@ -76,7 +75,6 @@ function App() {
           <Route path ="/CAB" component={CreateAppBooking}></Route>
           <Route path ="/UAB/:id" component={EditAppBooking}></Route>
           <Route path = "/HAB" component={HomeAppBooking}></Route>
-          <Route path = "/ABD" component={AppBookingDetails}></Route>
           <Route path = "/BR" component={BookingReport}></Route>
 
 
