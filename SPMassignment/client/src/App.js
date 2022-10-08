@@ -28,6 +28,7 @@ import Dashboard2 from "./Components/Dashboard/Dashboard2";
 import Dashboard1 from "./Components/Dashboard/Dashboard1";
 import DoctorReport from "./Components/Doctor/DoctorReport";
 import Navbar1 from "./Components/Navbar/Navbar1";
+import BookingReport from "./Components/Patient/BookingReport";
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
           <Route path ="/UAB/:id" component={EditAppBooking}></Route>
           <Route path = "/HAB" component={HomeAppBooking}></Route>
           <Route path = "/ABD" component={AppBookingDetails}></Route>
+          <Route path = "/BR" component={BookingReport}></Route>
 
 
 

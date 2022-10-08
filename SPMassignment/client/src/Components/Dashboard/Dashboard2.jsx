@@ -53,13 +53,32 @@ class Dashboard2 extends Component {
             >
               <div className="col">
                 <div class="card" style={{ width: "18rem" }}>
-                  <img src="./notes.jpg" class="card-img-top" alt="..." />
+                  <img src="" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Add Appointment</h5>
-                    <p>
-                      
-                    </p>
+                    <p></p>
                     <a href="/CAB" class="btn btn-primary">
+                      Click Here
+                    </a>
+                    &nbsp;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mern">
+            <div
+              className="row"
+              style={{ marginTop: "6%", marginBottom: "2%", marginLeft: "37%" }}
+            >
+              <div className="col">
+                <div class="card" style={{ width: "18rem" }}>
+                  <img src="" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Booking Report</h5>
+                    <p></p>
+                    <a href="/BR" class="btn btn-primary">
                       Click Here
                     </a>
                     &nbsp;
