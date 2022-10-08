@@ -59,7 +59,7 @@ export default class BookingReport extends Component {
         // Header
         doc.setFontSize(14);
         var fileTitle = "Appointment Booking Report";
-        var img = "https://i.ibb.co/gdr6KYs/Final-cut.jpg";
+        var img = "./Reportimg.jpg";
         doc.text(fileTitle, 30, 250);
         doc.addImage(img, "JPEG", 2, 2, 628, 200);
 
