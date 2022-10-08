@@ -33,6 +33,7 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
 
 
+
 function App() {
   
 
@@ -76,11 +77,9 @@ function App() {
           <Route path="/HAB" component={HomeAppBooking}></Route>
           <Route path="/BR" component={BookingReport}></Route>
 
-          <Route path="/aboutus" component={AboutUs}>
-            {" "}
-          </Route>
 
           <Route path="/contactus" component={ContactUs}></Route>
+          <Route path = "/aboutus" component={AboutUs}></Route>
 
           <Route path="/CPC" component={CreatePatientCheckin}></Route>
           <Route path="/UPC/:id" component={EditPatientCheckin}></Route>
