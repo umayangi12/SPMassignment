@@ -74,14 +74,29 @@ export default class HomeAppBooking extends Component {
                 Search
               </button>
             </form>
-            <br />
-            <br />
-            <br />
+            <button className="btn btn-success" style={{ marginLeft: "17%" }}>
+              <a
+                href="/dashboard2"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Dashboard
+              </a>
+            </button>
 
             <a class="navbar-brand" href="#"></a>
           </div>
         </nav>
-
+        <br />
+        <center>
+          <h1>
+            <span
+              class="badge  text-dark opacity-90 fs-3"
+              style={{ marginBlockStart: "-1%" }}
+            >
+              All Appointment Booking Details
+            </span>
+          </h1>
+        </center>
         <table class="table">
           <thead>
             <tr>
@@ -133,6 +148,13 @@ export default class HomeAppBooking extends Component {
             </a>{" "}
           </button>
         </center>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />

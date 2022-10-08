@@ -91,7 +91,7 @@ export default class CreateAppBooking extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg nav" style={{ marginTop: "5%" }}>
+        <nav class="navbar navbar-expand-lg nav">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ">
@@ -104,6 +104,14 @@ export default class CreateAppBooking extends Component {
                       >
                         Details
                       </a>{" "}
+                    </button>
+                    <button className="btn btn-success">
+                      <a
+                        href="/dashboard2"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        Dashboard
+                      </a>
                     </button>
                   </div>
                 </li>
@@ -122,8 +130,8 @@ export default class CreateAppBooking extends Component {
                 <br />
                 <br />
                 <div
-                  className="form-group col-md-6"
-                  style={{ marginBottom: "15px", marginLeft: "-1.5%" }}
+                  className="form-group"
+                  style={{ marginBottom: "15px" }}
                 >
                   <lable style={{ marginBottom: "5px" }}>Title</lable>
                   <select
