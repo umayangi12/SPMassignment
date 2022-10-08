@@ -30,6 +30,7 @@ import Navbar1 from "./Components/Navbar/Navbar1";
 import BookingReport from "./Components/Patient/BookingReport";
 import patientsDetails from "./Components/Doctor/patientsDetails";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 
 function App() {
@@ -55,13 +56,11 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-      
         <Navbar />
-        <div style={{marginTop: '3%'}}>
-        <Navbar1 />
+        <div style={{ marginTop: "3%" }}>
+          <Navbar1 />
         </div>
 
-        
         <Switch>
           <Route exact path="/" component={Home} />
 
@@ -72,26 +71,22 @@ function App() {
 
           <Route path="/loginDash" component={LoginDashboard}></Route>
 
+          <Route path="/CAB" component={CreateAppBooking}></Route>
+          <Route path="/UAB/:id" component={EditAppBooking}></Route>
+          <Route path="/HAB" component={HomeAppBooking}></Route>
+          <Route path="/BR" component={BookingReport}></Route>
 
+          <Route path="/aboutus" component={AboutUs}>
+            {" "}
+          </Route>
 
-          <Route path ="/CAB" component={CreateAppBooking}></Route>
-          <Route path ="/UAB/:id" component={EditAppBooking}></Route>
-          <Route path = "/HAB" component={HomeAppBooking}></Route>
-          <Route path = "/BR" component={BookingReport}></Route>
+          <Route path="/contactus" component={ContactUs}></Route>
 
-          <Route path = "/contactus" component={ContactUs}></Route>
-
-
-
-
-          <Route path ="/CPC" component={CreatePatientCheckin}></Route>
-          <Route path = "/UPC/:id" component={EditPatientCheckin}></Route>
-          <Route path ="/HPC" component={HomePatientCheckin}></Route>
-          <Route path ="/DR" component={DoctorReport}></Route>
-          <Route path ="/PDS" component={patientsDetails}></Route>
-          
-
-          
+          <Route path="/CPC" component={CreatePatientCheckin}></Route>
+          <Route path="/UPC/:id" component={EditPatientCheckin}></Route>
+          <Route path="/HPC" component={HomePatientCheckin}></Route>
+          <Route path="/DR" component={DoctorReport}></Route>
+          <Route path="/PDS" component={patientsDetails}></Route>
 
           <Switch>
             <PrivateRoute exact path="/dashboard1" component={Dashboard1} />
@@ -100,7 +95,6 @@ function App() {
           </Switch>
           <Route path="*" component={NotFound} />
         </Switch>
-      
       </Router>
       <Footer />
     </Provider>

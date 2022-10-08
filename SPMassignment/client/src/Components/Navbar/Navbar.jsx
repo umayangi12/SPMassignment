@@ -17,7 +17,7 @@ class Navbar extends Component {
       <div>
         <nav class="navbar navbar-expand-lg nav">
           <div class="container-fluid">
-          <img className="suwaarana" src="./suwaarana.jpg" />
+            <img className="suwaarana" src="./suwaarana.jpg" />
             <a class="navbar-brand navtext" href="#"></a>
             <button
               class="navbar-toggler"
@@ -42,7 +42,7 @@ class Navbar extends Component {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link navtext1" href="#">
+                  <a class="nav-link navtext1" href="/aboutus">
                     About Us
                   </a>
                 </li>
