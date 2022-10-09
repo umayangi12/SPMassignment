@@ -62,7 +62,7 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
-.topic{
+.topicS{
   margin-left: 30%;
  position: sticky;
 }
@@ -75,13 +75,18 @@ input[type="checkbox"] {
   font-size: 14px;
 }
 
-.Homepi {
-  width: 25%;
+.Servicepic {
   margin-left: 30%;
-  
-
 }
-.card:hover{
-
-}
-
+.zoomin img {
+      height: 25%;
+      width: 25%;
+      -webkit-transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+      transition: all 2s ease;
+    }
+    .zoomin img:hover {
+      width: 40%;
+      height: 40%;
+    }

@@ -26,7 +26,8 @@ export default class Services extends Component {
             </div>
           </div>
         </div>
-        <h3 class="topic">MEDICAL & SURGICAL SERVICES</h3>
+
+        <h3 class="topicS">MEDICAL & SURGICAL SERVICES</h3>
         <p class="t-phar">
           Suwa Arana has revolutionized the Sri Lankan healthcare industry. For
           over a decade we have played a critical role in the nation’s strategy
@@ -44,11 +45,13 @@ export default class Services extends Component {
           complete range of the latest diagnostic and high-end medical
           technology.
         </p>
-        <img class="Homepi" src="./HOS.jpg" />
-        <br />
-        <br />
+        <div class="zoomin">
+          <img class="Servicepic" src="./HOS.jpg" />
+          <br />
+          <br />
+        </div>
 
-        <h3 class="topic">CENTERS OF EXCELLENCE</h3>
+        <h3 class="topicS">CENTERS OF EXCELLENCE</h3>
 
         <div className="row">
           <div
@@ -56,7 +59,7 @@ export default class Services extends Component {
           >
             <div className="col">
               <div class="card" style={{ width: "17rem" }}>
-                <img src="./app.jpg" class="card-img-top" alt="..." />
+                <img src="./c1.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">FERTILITY CENTER</h5>
                   <p class="c-phar">
@@ -64,7 +67,6 @@ export default class Services extends Component {
                     and offers a wide array of fertility procedures, to help
                     couples towards experiencing the miracle of parenthood.
                   </p>
-                  &nbsp;
                 </div>
               </div>
             </div>
@@ -75,14 +77,13 @@ export default class Services extends Component {
               style={{ marginTop: "4%", marginBottom: "8%", marginLeft: "10%" }}
             >
               <div class="card" style={{ width: "17rem" }}>
-                <img src="./report.jpg" class="card-img-top" alt="..." />
+                <img src="./c4.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">GASTROENTEROLOGY</h5>
+                  <h5 class="card-title">HEALTH CHECK</h5>
                   <p class="c-phar">
-                    This is a self-contained unit specializing in the diagnosis
-                    and treatment of gastro-intestinal, hepatology disorders,
-                    led by a team of consultant gastroenterologists and
-                    surgeons.
+                    Give your loved ones the gift of health with a Health
+                    Checkup gift voucher, which can be set off against all 30
+                    health check packages available.
                   </p>
                 </div>
               </div>
@@ -92,15 +93,75 @@ export default class Services extends Component {
         <div className="col">
           <div
             style={{
-              marginTop: "-39.1%",
+              marginTop: "-36%",
               marginBottom: "3%",
               marginLeft: "80%",
             }}
           >
             <div class="card" style={{ width: "17rem" }}>
-              <img src="./report.jpg" class="card-img-top" alt="..." />
+              <img src="./c5.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">HEART CENTRE</h5>
+                <p class="c-phar">
+                  We have a proven track record of excellent results and
+                  unmatched aftercare along with comprehensive cardiac and
+                  cardiothoracic surgical procedures, all at affordable rates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div
+            style={{ marginTop: "2%", marginBottom: "8%", marginLeft: "30%" }}
+          >
+            <div className="col">
+              <div class="card" style={{ width: "17rem" }}>
+                <img src="./c6.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">KIDNEY CARE CENTER</h5>
+                  <p class="c-phar">
+                    We offer comprehensive and specialized care for kidney
+                    diseases, with dialysis and kidney transplants performed by
+                    the best and most respected nephrologists in the country.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col">
+            <div
+              style={{ marginTop: "4%", marginBottom: "8%", marginLeft: "10%" }}
+            >
+              <div class="card" style={{ width: "17rem" }}>
+                <img src="./c7.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">EMERGENCY SERVICES</h5>
+                  <p class="c-phar">
+                    On call 24 hours a day, 7 days a week, Suwa Arana is
+                    possibly Sri Lanka’s best choice for treatment in a medical
+                    emergency, as we offer minimal waiting times and a dedicated
+                    unit of doctors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div
+            style={{
+              marginTop: "-38%",
+              marginBottom: "3%",
+              marginLeft: "80%",
+            }}
+          >
+            <div class="card" style={{ width: "17rem" }}>
+              <img src="./c8.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">GASTROENTEROLOGY</h5>
                 <p class="c-phar">
                   We have a proven track record of excellent results and
                   unmatched aftercare along with comprehensive cardiac and
@@ -111,6 +172,11 @@ export default class Services extends Component {
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }
