@@ -83,6 +83,8 @@ function App() {
           <Route path = "/aboutus" component={AboutUs}></Route>
           <Route path = "/services" component={Services}></Route>
 
+
+
           <Route path="/CPC" component={CreatePatientCheckin}></Route>
           <Route path="/UPC/:id" component={EditPatientCheckin}></Route>
           <Route path="/HPC" component={HomePatientCheckin}></Route>

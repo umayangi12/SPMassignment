@@ -15,10 +15,13 @@ export default class Footer extends Component {
                 <a href="#">Dashboard</a>
               </li>
               <li>
-                <a href="#">Resources</a>
+                <a href="/aboutus">About Us</a>
               </li>
               <li>
-                <a href="#">Support Service</a>
+                <a href="/contactus">Contact Us</a>
+              </li>
+              <li>
+                <a href="/services">Service</a>
               </li>
             </ul>
 
