@@ -8,7 +8,7 @@ export default class Services extends Component {
         <div class="wrap-collabsible">
           <input id="collapsible" class="toggle" type="checkbox" />
           <label for="collapsible" class="lbl-toggle">
-            Centers of Excellence
+            Centres of Excellence
           </label>
           <div class="collapsible-content">
             <div class="content-inner">
@@ -51,7 +51,7 @@ export default class Services extends Component {
           <br />
         </div>
 
-        <h3 class="topicS">CENTERS OF EXCELLENCE</h3>
+        <h3 class="topicS">CENTRES OF EXCELLENCE</h3>
 
         <div className="row">
           <div
@@ -61,7 +61,7 @@ export default class Services extends Component {
               <div class="card" style={{ width: "17rem" }}>
                 <img src="./c1.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">FERTILITY CENTER</h5>
+                  <h5 class="card-title">FERTILITY CENTRE</h5>
                   <p class="c-phar">
                     Our Fertility Centre is equipped with the latest equipment
                     and offers a wide array of fertility procedures, to help
@@ -120,7 +120,7 @@ export default class Services extends Component {
               <div class="card" style={{ width: "17rem" }}>
                 <img src="./c6.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">KIDNEY CARE CENTER</h5>
+                  <h5 class="card-title">KIDNEY CARE CENTRE</h5>
                   <p class="c-phar">
                     We offer comprehensive and specialized care for kidney
                     diseases, with dialysis and kidney transplants performed by
