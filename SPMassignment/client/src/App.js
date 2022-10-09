@@ -31,6 +31,7 @@ import BookingReport from "./Components/Patient/BookingReport";
 import patientsDetails from "./Components/Doctor/patientsDetails";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Services from "./Components/Services/Services";
 
 
 
@@ -80,6 +81,7 @@ function App() {
 
           <Route path="/contactus" component={ContactUs}></Route>
           <Route path = "/aboutus" component={AboutUs}></Route>
+          <Route path = "/services" component={Services}></Route>
 
           <Route path="/CPC" component={CreatePatientCheckin}></Route>
           <Route path="/UPC/:id" component={EditPatientCheckin}></Route>
