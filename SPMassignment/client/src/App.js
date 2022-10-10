@@ -35,7 +35,9 @@ import Services from "./Components/Services/Services";
 import Login3 from "./Components/Auth/Login3";
 import Register3 from "./Components/Auth/Register3";
 import Dashboard3 from "./Components/Dashboard/Dashboard3";
-
+import CreatePharmacy from "./Components/Pharmacy/CreatePharmacy";
+import EditMedicine from "./Components/Pharmacy/EditMedicine";
+import HomePharmacy from "./Components/Pharmacy/HomePharmacy";
 
 
 function App() {
@@ -96,6 +98,10 @@ function App() {
           <Route path="/HPC" component={HomePatientCheckin}></Route>
           <Route path="/DR" component={DoctorReport}></Route>
           <Route path="/PDS" component={patientsDetails}></Route>
+
+          <Route path="/addMedicine" component={CreatePharmacy}></Route>
+          <Route path="/editMedicine/:id" component={EditMedicine}></Route>
+          <Route path="/homePharmacy" component={HomePharmacy}></Route>
 
           <Switch>
             <PrivateRoute exact path="/dashboard1" component={Dashboard1} />
