@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 const Login1Router = require("./routes/api/Login1");
 const Login2Router = require("./routes/api/Login2");
+const Login3Router = require("./routes/api/Login3");
 const config = require("config");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -49,6 +50,7 @@ require("./config/passport")(passport);
 // Routes
 app.use("/api/Login1", Login1Router);
 app.use("/api/Login2", Login2Router);
+app.use("/api/Login3", Login3Router);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));

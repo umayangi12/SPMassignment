@@ -2,10 +2,10 @@ import axios from "axios";
 import setAuthToken from "../../utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types"; // Register User
-export const registerUser2 = (userData, history) => (dispatch) => {
+export const registerUser3 = (userData, history) => (dispatch) => {
   axios
-    .post("/api/PharmacyUser/registerPharmacy", userData)
-    .then((res) => history.push("/login2")) // re-direct to login on successful register
+    .post("/api/Login3/register3", userData)
+    .then((res) => history.push("/login3")) // re-direct to login on successful register
     .catch((err) =>
       dispatch({
         type: GET_ERRORS,
@@ -13,9 +13,9 @@ export const registerUser2 = (userData, history) => (dispatch) => {
       })
     );
 }; // Login - get user token
-export const loginUser2 = (userData) => (dispatch) => {
+export const loginUser3 = (userData) => (dispatch) => {
   axios
-    .post("/api/PharmacyUser/loginPharmacy", userData)
+    .post("/api/Login3/login3", userData)
     .then((res) => {
       // Save to localStorage// Set token to localStorage
       const { token } = res.data;
