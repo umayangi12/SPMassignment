@@ -31,38 +31,38 @@ class Dashboard3 extends Component {
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ">
                 <li>
-                  <h1 className="backw1 ">Laboratory Dashboard</h1>
+                  <h1 className="backw1 ">Pharmacy Dashboard</h1>
                   </li>
                   <li class="nav-item">
                     <button className="btn btn-success">
                       <a
-                        href="/CPC"
+                        href="/addMedicine"
                         style={{ textDecoration: "none", color: "white" }}
                       >
-                        Patient Check-in
+                        Add medicine details
                       </a>
                     </button>
                   </li>
                   <li class="nav-item">
                     <button className="btn btn-success">
                       <a
-                        href="/HPC"
+                        href="/homePharmacy"
                         style={{ textDecoration: "none", color: "white" }}
                       >
-                        All Details Patient Check-in
+                        All Pharmacy Details
                       </a>
                     </button>
                   </li>
-                  <li class="nav-item">
+                  {/* <li class="nav-item">
                     <button className="btn btn-success">
                       <a
                         href="/PDS"
                         style={{ textDecoration: "none", color: "white" }}
                       >
-                        Appointment Details
+                        Doctor requests
                       </a>
                     </button>
-                  </li>
+                  </li> */}
             
                   &nbsp; &nbsp; &nbsp;
                   <li class="nav-item ">
@@ -86,9 +86,9 @@ class Dashboard3 extends Component {
             >
               <div className="col">
                 <div class="card" style={{ width: "18rem" }}>
-                  <img src="./doctorcheking.jpg" class="card-img-top" alt="..." />
+                  <img src="./healthcare.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
-                    <h5 class="card-title">Create Patient Check-in</h5>
+                    <h5 class="card-title">Insert medicine details</h5>
                     <p></p>
                     <a href="/CPC" class="btn btn-primary">
                       Click Here
@@ -102,7 +102,7 @@ class Dashboard3 extends Component {
                 <div class="card" style={{ width: "18rem" }}>
                   <img src="./report.jpg" class="card-img-top" alt="..." />
                   <div class="card-body">
-                    <h5 class="card-title">Patient Checking-in Report</h5>
+                    <h5 class="card-title">Medicine detail Report</h5>
                     <p></p>
                     <a href="/DR" class="btn btn-primary">
                       Click Here
