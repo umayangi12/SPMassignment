@@ -38,6 +38,7 @@ import Dashboard3 from "./Components/Dashboard/Dashboard3";
 import CreatePharmacy from "./Components/Pharmacy/CreatePharmacy";
 import EditMedicine from "./Components/Pharmacy/EditMedicine";
 import HomePharmacy from "./Components/Pharmacy/HomePharmacy";
+import BMIcal from "./Components/Calculator/BMIcal";
 
 
 function App() {
@@ -91,6 +92,7 @@ function App() {
           <Route path="/contactus" component={ContactUs}></Route>
           <Route path = "/aboutus" component={AboutUs}></Route>
           <Route path = "/services" component={Services}></Route>
+          <Route path = "/bmical" component={BMIcal}></Route>
 
 
           <Route path="/CPC" component={CreatePatientCheckin}></Route>
