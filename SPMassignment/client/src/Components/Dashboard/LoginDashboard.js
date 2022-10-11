@@ -51,11 +51,11 @@ class LoginDashboard extends Component {
                 <h5 class="card-title">Pharmacy Login</h5>
                 <br />
                 <br />
-                <a href="" class="btn btn-primary">
+                <a href="/login3" class="btn btn-primary">
                   Login
                 </a>
                 &nbsp;
-                <a href="" class="btn btn-success">
+                <a href="/register3" class="btn btn-success">
                   SignUp
                 </a>
               </div>

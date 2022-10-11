@@ -32,8 +32,13 @@ import patientsDetails from "./Components/Doctor/patientsDetails";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Services from "./Components/Services/Services";
+import Login3 from "./Components/Auth/Login3";
+import Register3 from "./Components/Auth/Register3";
+import Dashboard3 from "./Components/Dashboard/Dashboard3";
+import CreatePharmacy from "./Components/Pharmacy/CreatePharmacy";
+import EditMedicine from "./Components/Pharmacy/EditMedicine";
+import HomePharmacy from "./Components/Pharmacy/HomePharmacy";
 import BMIcal from "./Components/Calculator/BMIcal";
-
 
 
 function App() {
@@ -68,11 +73,15 @@ function App() {
           <Route exact path="/" component={Home} />
 
           <Route path="/login1" component={Login1}></Route>
-          <Route path="/register2" component={Register2} />
-          <Route path="/register1" component={Register1} />
           <Route path="/login2" component={Login2} />
-
+          <Route path="/login3" component={Login3} />
+          <Route path="/register1" component={Register1} />
+          <Route path="/register2" component={Register2} />
+          <Route path="/register3" component={Register3} />
+          
+         
           <Route path="/loginDash" component={LoginDashboard}></Route>
+
 
           <Route path="/CAB" component={CreateAppBooking}></Route>
           <Route path="/UAB/:id" component={EditAppBooking}></Route>
@@ -86,16 +95,20 @@ function App() {
           <Route path = "/bmical" component={BMIcal}></Route>
 
 
-
           <Route path="/CPC" component={CreatePatientCheckin}></Route>
           <Route path="/UPC/:id" component={EditPatientCheckin}></Route>
           <Route path="/HPC" component={HomePatientCheckin}></Route>
           <Route path="/DR" component={DoctorReport}></Route>
           <Route path="/PDS" component={patientsDetails}></Route>
 
+          <Route path="/addMedicine" component={CreatePharmacy}></Route>
+          <Route path="/editMedicine/:id" component={EditMedicine}></Route>
+          <Route path="/homePharmacy" component={HomePharmacy}></Route>
+
           <Switch>
             <PrivateRoute exact path="/dashboard1" component={Dashboard1} />
             <PrivateRoute exact path="/dashboard2" component={Dashboard2} />
+            <PrivateRoute exact path="/dashboard3" component={Dashboard3} />
             <Route path="*" component={NotFound} />
           </Switch>
           <Route path="*" component={NotFound} />
