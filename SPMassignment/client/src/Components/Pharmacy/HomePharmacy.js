@@ -107,7 +107,7 @@ export default class HomePharmacy extends Component {
                 <td>
                   <a
                     className="btn btn-warning text-dark"
-                    href={`/pharmacyUpdate/${posts._id}`}
+                    href={`/editMedicine/${posts._id}`}
                   >
                     <i className="fas fa-edit"></i>&nbsp; Edit
                   </a>

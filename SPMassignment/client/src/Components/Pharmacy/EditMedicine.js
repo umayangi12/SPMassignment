@@ -63,7 +63,7 @@ onChangePrice=(e)=>{
     };
 
     axios.put(`/pharmacy/update/${id}`, data).then((res) => {
-      let path = "/pharmacyGet";
+      let path = "/homePharmacy";
       if (res.data.success) {
         alert("Medicine details Updated Successfully");
         this.props.history.push(path);

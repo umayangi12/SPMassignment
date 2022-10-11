@@ -1,7 +1,7 @@
 import Axios from "axios";
 import React, { Component } from "react";
 import "./Allcss.css";
-import swal from "@sweetalert/with-react";
+import swal from "sweetalert";
 
 export default class CreatePatientCheckin extends Component {
   constructor(props) {
