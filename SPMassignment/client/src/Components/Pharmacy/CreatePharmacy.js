@@ -1,6 +1,7 @@
 import axios from "axios"
 import React,{Component} from "react"
 import "./Allcss.css"
+
 import Swal from "sweetalert2"
 
 export default class CreatePharmacy extends Component {
@@ -17,6 +18,7 @@ export default class CreatePharmacy extends Component {
 
     }
 
+
     handleInputChange=(e)=>{
         const {name,value}=e.target
         //console.log({...this.state});
@@ -29,14 +31,14 @@ export default class CreatePharmacy extends Component {
 
     onChangeQuantity=(e)=>{
         console.log(this.state.type)
-        if(this.state.type == 'Tablet' || this.state.type == 'Inhaler'){
+        if(this.state.type === 'Tablet' || this.state.type === 'Inhaler'){
             this.setState({
                 quantity:e.target.value.replace(/\D/g,'')+" Boxes"
             })
         }else if(
-            this.state.type == 'Syrup'||
-            this.state.type == 'Drops'||
-            this.state.type == 'Topical'
+            this.state.type === 'Syrup'||
+            this.state.type === 'Drops'||
+            this.state.type === 'Topical'
         ){
             this.setState({
                 quantity:e.target.value.replace(/\D/g,'')+" Bottles"
@@ -68,7 +70,7 @@ export default class CreatePharmacy extends Component {
 
         }
 
-        console.log(data)
+        //console.log(data)
 
         //validation
         if(
@@ -85,7 +87,7 @@ export default class CreatePharmacy extends Component {
           })
         }else{
             axios.post("/pharmacy/save",data).then((res)=>{
-                let path="/pharmacyAdd"
+                let path="/addMedicine"
                 if(res.data.success){
                     alert("Details Saved Successfully")
                     this.props.history.push(path)
@@ -113,7 +115,7 @@ export default class CreatePharmacy extends Component {
                             <div>
                                 <button className="btn btn-success">
                                 <a
-                                    href="/HAB"
+                                    href="/homePharmacy"
                                     style={{ textDecoration: "none", color: "white" }}
                                 >
                                     Details
