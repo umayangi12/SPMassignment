@@ -42,6 +42,11 @@ class Navbar extends Component {
                   </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link navtext1" href="/bmical">
+                    BMI
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link navtext1" href="/aboutus">
                     About Us
                   </a>
