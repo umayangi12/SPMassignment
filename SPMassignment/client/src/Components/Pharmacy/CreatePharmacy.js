@@ -1,8 +1,7 @@
 import axios from "axios"
 import React,{Component} from "react"
 import "./Allcss.css"
-
- import Swal from "sweetalert2"
+import Swal from "sweetalert2"
 
 export default class CreatePharmacy extends Component {
 
@@ -17,7 +16,6 @@ export default class CreatePharmacy extends Component {
         }
 
     }
-
 
     handleInputChange=(e)=>{
         const {name,value}=e.target
