@@ -15,6 +15,7 @@ const app = express();
 
 const APPBOOKING = require("./routes/api/AppBooking");
 const PATIENTCHECKIN = require("./routes/api/PatientCheckin");
+const PharmacyRouter=require("./routes/api/Pharmacy");
 
 // Body parser middleware
 app.use(bodyParser.json());
@@ -28,7 +29,7 @@ app.use(
 //route middleware
 app.use(APPBOOKING);
 app.use(PATIENTCHECKIN);
-
+app.use(PharmacyRouter);
 
 app.use(express.json());
 // DB Config
