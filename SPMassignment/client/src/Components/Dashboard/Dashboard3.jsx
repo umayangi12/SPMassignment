@@ -90,7 +90,7 @@ class Dashboard3 extends Component {
                   <div class="card-body">
                     <h5 class="card-title">Insert medicine details</h5>
                     <p></p>
-                    <a href="/CPC" class="btn btn-primary">
+                    <a href="/addMedicine" class="btn btn-primary">
                       Click Here
                     </a>
                     &nbsp;
@@ -104,7 +104,7 @@ class Dashboard3 extends Component {
                   <div class="card-body">
                     <h5 class="card-title">Medicine detail Report</h5>
                     <p></p>
-                    <a href="/DR" class="btn btn-primary">
+                    <a href="/pReport" class="btn btn-primary">
                       Click Here
                     </a>
                     &nbsp;
