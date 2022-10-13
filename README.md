@@ -6,7 +6,23 @@ how to run the code:
 4.run the code by typing npm run dev in the terminal
 
 Dummy accounts:
-patient login email: patient@gmail.com - password: patient123                                                      doctor login email: doctor@gmail.com - password: doctor123                                                                                 Pharmacist login email: phar123@gmail.com - passworrd: phar123
+
+patient login email: patient@gmail.com - password: patient123
+
+doctor login email: doctor@gmail.com - password: doctor123
+
+Pharmacist login email: phar123@gmail.com - passworrd: phar123
+
+
+User Registration
+
+![Screenshot (323)](https://user-images.githubusercontent.com/89120566/195634767-1a2a366b-a2fd-4c27-9aa5-84da61a9e323.png)
+
+
+User Login
+
+![Screenshot (325)](https://user-images.githubusercontent.com/89120566/195635046-da6bd047-2890-4c33-a7d3-a99d7bbd488e.png)
+
 
 This application has 3 functionalites.
 1. Patint Management
