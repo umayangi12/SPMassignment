@@ -40,6 +40,7 @@ import EditMedicine from "./Components/Pharmacy/EditMedicine";
 import HomePharmacy from "./Components/Pharmacy/HomePharmacy";
 import BMIcal from "./Components/Calculator/BMIcal";
 import PharmacyReport from "./Components/Pharmacy/PharmacyReport";
+import BMRcal from "./Components/Calculator/BMRcal";
 
 
 function App() {
@@ -94,6 +95,7 @@ function App() {
           <Route path = "/aboutus" component={AboutUs}></Route>
           <Route path = "/services" component={Services}></Route>
           <Route path = "/bmical" component={BMIcal}></Route>
+          <Route path = "/bmrcal" component={BMRcal}></Route>
 
 
           <Route path="/CPC" component={CreatePatientCheckin}></Route>

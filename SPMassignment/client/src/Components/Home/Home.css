@@ -274,5 +274,44 @@ a:link {
   top: -.5em;
 }
 .textline{
-  margin-top: 2%;
+  margin-top: -6%;
+}
+
+.group1 { 
+  display: table;
+  width: 100%;
+  font-size: 3em;
+}
+.item1 {
+  display: table-cell;
+}
+.text1 { 
+  white-space: nowrap;
+  width: 1%;
+  padding: 0 10px;
+  color: blue;
+}
+.line1 {
+  border-bottom: 1px solid #000;
+  position: relative;
+  top: -.5em;
+}
+.textline1{
+  margin-top: 3%;
+}
+
+
+
+
+.hp12 {
+  margin-top: 3%;
+  margin-left: 8%;
+}
+.hp22 {
+  margin-top: 3%;
+  
+}
+.hp32 {
+  margin-top: 3%;
+
 }

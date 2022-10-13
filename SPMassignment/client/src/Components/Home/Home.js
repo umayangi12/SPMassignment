@@ -42,13 +42,76 @@ export default class Home extends Component {
                     <div class="text-center mg-text"> <span class="mg-text">Blood Test</span>
                     </div> </div> </div> </div> </div> </div> </div> </div>
 
-        <div class="group textline">
-          <div class="item line"></div>
-          <div class="item text"><h2>Quick Access</h2></div>
-          <div class="item line"></div>
+        <div class="group textline1">
+          <div class="item line1"></div>
+          <div class="item text1"><h2>CALCULATORS</h2></div>
+          <div class="item line1"></div>
         </div>
 
         <div className='row'>
+          <div className='col hp12'>
+            <div class="hero-container ">
+              <div class="main-container">
+                <div class="poster-container">
+                  <a href="#"><img src="./BMI.jpg" class="poster" /></a>
+                </div>
+                <div class="ticket-container">
+                  <div class="ticket__content">
+                    <h4 class="ticket__movie-title">BMI Calculator</h4>
+                    <p class="ticket__movie-slogan">
+                    The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. 
+                    </p>
+                    <button class="ticket__buy-btn"> <a href="/bmical">Claculate</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col hp22'>
+            <div class="hero-container ">
+              <div class="main-container">
+                <div class="poster-container">
+                  <a href="#"><img src="./BMR.jpg" class="poster" /></a>
+                </div>
+                <div class="ticket-container">
+                  <div class="ticket__content">
+                    <h4 class="ticket__movie-title">BMR Calculator</h4>
+                    <p class="ticket__movie-slogan">
+                    The basal metabolic rate (BMR) is the amount of energy needed while resting in a temperate environment when the digestive system is inactive
+                    </p>
+                    <button class="ticket__buy-btn"> <a href="/bmrcal">Claculate</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col hp32'>
+            <div class="hero-container ">
+              <div class="main-container">
+                <div class="poster-container">
+                  <a href="#"><img src="./claimrefund.jpg" class="poster" /></a>
+                </div>
+                <div class="ticket-container">
+                  <div class="ticket__content">
+                    <h4 class="ticket__movie-title">Claim Refund</h4>
+                    <p class="ticket__movie-slogan">
+                      Couldn't utilize the service of the professional you channeled? Don't fret, your money will be transferred back to you!
+                    </p>
+                    <button class="ticket__buy-btn">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        <div class="group textline">
+          <div class="item line"></div>
+          <div class="item text"><h2>QUICK ACCESS</h2></div>
+          <div class="item line"></div>
+        </div>
+
+        <div className='row' style={{marginBottom:'-5%'}}>
           <div className='col hp1'>
             <div class="hero-container ">
               <div class="main-container">
@@ -77,7 +140,7 @@ export default class Home extends Component {
                   <div class="ticket__content">
                     <h4 class="ticket__movie-title">Order Medicine</h4>
                     <p class="ticket__movie-slogan">
-                    Select your preferred pharmacy, order your prescription medicine online and have it delivered straight to your home.
+                      Select your preferred pharmacy, order your prescription medicine online and have it delivered straight to your home.
                     </p>
                     <button class="ticket__buy-btn">View</button>
                   </div>
@@ -95,7 +158,7 @@ export default class Home extends Component {
                   <div class="ticket__content">
                     <h4 class="ticket__movie-title">Claim Refund</h4>
                     <p class="ticket__movie-slogan">
-                    Couldn't utilize the service of the professional you channeled? Don't fret, your money will be transferred back to you!
+                      Couldn't utilize the service of the professional you channeled? Don't fret, your money will be transferred back to you!
                     </p>
                     <button class="ticket__buy-btn">View</button>
                   </div>
@@ -113,7 +176,7 @@ export default class Home extends Component {
                   <div class="ticket__content">
                     <h4 class="ticket__movie-title">Concierge Service</h4>
                     <p class="ticket__movie-slogan">
-                    Give your loved ones the best health care with no waiting time and cashless pay. The concierge provides personalized healthcare at a premium price!
+                      Give your loved ones the best health care with no waiting time and cashless pay. The concierge provides personalized healthcare at a premium price!
                     </p>
                     <button class="ticket__buy-btn">View</button>
                   </div>
@@ -122,6 +185,8 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+
+
 
       </div>
 

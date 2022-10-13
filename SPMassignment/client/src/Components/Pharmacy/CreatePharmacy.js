@@ -107,7 +107,7 @@ export default class CreatePharmacy extends Component {
     render(){
         return(
             <div>
-                <nav class="navbar navbar-expand-lg nav" style={{ marginTop: "5%" }}>
+                <nav class="navbar navbar-expand-lg nav" >
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ">

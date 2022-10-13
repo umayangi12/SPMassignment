@@ -86,31 +86,33 @@ export default class BMIcal extends Component {
     let results = this.getBMIResults(bmi);
 
     return (
-      <div className="App container">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className="row">
+      <div >
+        <br/>
+         <center>
           <h1>
             <span
-              class="badge  text-dark opacity-90 fs-3"
+              class="badge  text-dark "
               style={{ marginBlockStart: "-1%" }}
             >
               BMI Calculator
             </span>
             <p>Enter your weight and height below.</p>
           </h1>
-        </div>
-        <div className="row">
+          </center>
+         <div className="card2" style={{ marginLeft: "5%" }}>
+          <div className="card" style={{ width: "85rem" }}>
+            <div class="card-body">
+           
+             
+        <br/>
+        <br/>
+        <div className="row" style={{ marginLeft:"22%"}}>
           <div className="col-sm-6">
             <form>
-              <div className="form-group">
-                <legend>Weight</legend>
+              <div className="form-group ">
+                <legend className="bmiwh">Weight (lb) </legend>
                 <div className="row">
-                  <div className="col-xs-12" style={{ width: "10rem" }}>
+                  <div className="col-xs-12" style={{ width: "15rem" }}>
                     <input
                       className="form-control"
                       id="bmiWeight"
@@ -120,17 +122,15 @@ export default class BMIcal extends Component {
                       value={this.state.weight}
                       onChange={this.handleWeightChange}
                     />
-                    <label className="control-label" htmlFor="bmiWeight">
-                      lb
-                    </label>
+                    
                   </div>
                 </div>
               </div>
 
               <div className="form-group">
-                <legend>Height</legend>
+                <legend className="bmiwh">Height (ft/in)</legend>
                 <div className="row">
-                  <div className="col-xs-6" style={{ width: "10rem" }}>
+                  <div className="col-xs-6" style={{ width: "15rem" }}>
                     <input
                       className="form-control"
                       id="bmiHeightFeet"
@@ -140,12 +140,10 @@ export default class BMIcal extends Component {
                       value={this.state.heightFeet}
                       onChange={this.handleHeightFeetChange}
                     />
-                    <label className="control-label" htmlFor="bmiHeightFeet">
-                      ft
-                    </label>
+                    
                   </div>
                   &nbsp; &nbsp;&nbsp; &nbsp;
-                  <div className="col-xs-6" style={{ width: "10rem" }}>
+                  <div className="col-xs-6" style={{ width: "15rem" }}>
                     <input
                       className="form-control"
                       id="bmiHeightInch"
@@ -155,16 +153,14 @@ export default class BMIcal extends Component {
                       value={this.state.heightInch}
                       onChange={this.handleHeightInchChange}
                     />
-                    <label className="control-label" htmlFor="bmiHeightInch">
-                      in
-                    </label>
+                   
                   </div>
                 </div>
               </div>
             </form>
           </div>
 
-          <div className="col-sm-6">
+          <div className="col-sm-6" style={{ marginTop:'20%', marginLeft: '-40%'}}>
             <BmiDisplay
               bmi={bmi}
               label={results.label}
@@ -172,15 +168,16 @@ export default class BMIcal extends Component {
             />
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+         </div>
+            </div>
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
       </div>
+      
     );
   }
 }
