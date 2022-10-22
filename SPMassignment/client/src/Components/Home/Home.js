@@ -10,9 +10,9 @@ export default class Home extends Component {
 
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group btn-group-lg btnh3" role="group" aria-label="First group">
-            <button type="button" class="btn btn-primary">Doctor Channeling - Channel a doctor</button>
-            <button type="button" class="btn btn-success">Driving License Medical - Book and appoinment</button>
-            <button type="button" class="btn btn-warning">Tele-Chenneling - Video consultation</button>
+            <button type="button" class="btn btn-primary"><a href="/login2" style={{ color: 'white'}}>Doctor Channeling - Channel a doctor</a></button>
+            <button type="button" class="btn btn-success"><a href="/login1" style={{ color: 'white'}}>Patient Check-in - Full Spectrum Patient Check-in </a></button>
+            <button  type="button" class="btn btn-warning"><a href="/login3" style={{ color: 'white'}}>Pharmacy booking - Order your medicine</a></button>
           </div>
         </div>
 
@@ -85,24 +85,7 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
-          <div className='col hp32'>
-            <div class="hero-container ">
-              <div class="main-container">
-                <div class="poster-container">
-                  <a href="#"><img src="./claimrefund.jpg" class="poster" /></a>
-                </div>
-                <div class="ticket-container">
-                  <div class="ticket__content">
-                    <h4 class="ticket__movie-title">Claim Refund</h4>
-                    <p class="ticket__movie-slogan">
-                      Couldn't utilize the service of the professional you channeled? Don't fret, your money will be transferred back to you!
-                    </p>
-                    <button class="ticket__buy-btn">View</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    
           </div>
 
         <div class="group textline">

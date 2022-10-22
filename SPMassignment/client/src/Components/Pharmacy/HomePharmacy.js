@@ -83,6 +83,17 @@ export default class HomePharmacy extends Component {
             <a class="navbar-brand" href="#"></a>
           </div>
         </nav>
+        <br />
+        <center>
+          <h1>
+            <span
+              class="badge  text-dark opacity-90 fs-3"
+              style={{ marginBlockStart: "-1%" }}
+            >
+              All Pharmacy Details
+            </span>
+          </h1>
+        </center>
 
         <table class="table">
           <thead>
@@ -93,6 +104,7 @@ export default class HomePharmacy extends Component {
               <th scope="col">Quantity</th>
               <th scope="col">Expiration date</th>
               <th scope="col">Price</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -126,7 +138,7 @@ export default class HomePharmacy extends Component {
         </table>
         <center>
           <button className="btn btn-success">
-            <a href="/pharmacyAdd" style={{ textDecoration: "none", color: "white" }}>
+            <a href="/addMedicine" style={{ textDecoration: "none", color: "white" }}>
               Add medicine{" "}
             </a>{" "}
           </button>

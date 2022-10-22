@@ -66,7 +66,7 @@ class Dashboard3 extends Component {
             
                   &nbsp; &nbsp; &nbsp;
                   <li class="nav-item ">
-                <button style={{marginLeft:'215%'}}
+                <button style={{marginLeft:'355%'}}
             
             onClick={this.onLogoutClick}
             className="btn btn-lg btn-warning "
