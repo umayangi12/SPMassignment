@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import swal from "@sweetalert/with-react";
 
 export default class EditAppBooking extends Component {
   constructor(props) {
@@ -38,7 +39,36 @@ export default class EditAppBooking extends Component {
       nicpass: nicpass,
       area: area,
     };
+//email validation
+    const uemail =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    //phone number validation
+    const ph = /^[0-9\b]+$/;
+    if (!ph.test(String(mobile)) || mobile.length != 10) {
+      swal(
+        "Invalid Contact Number !",
+        "contact number should be valid pattern",
+        "error"
+      );
+    } else if (!uemail.test(String(email))) {
+      swal(
+        "Invalid email address !",
+        "Please enter valid email address",
+        "error"
+      );
+
+      } else if (
+      title.length === 0 ||
+      pname.length === 0 ||
+      mobile.length === 0 ||
+      date.length === 0 ||
+      email.length===0 ||
+      nicpass.length === 0 ||
+      area.length === 0
+    ) {
+      swal("Please fill all the details");
+    } else {
     axios.put(`/appbooking/update/${id}`, data).then((res) => {
       let path = "/HAB";
       if (res.data.success) {
@@ -56,7 +86,7 @@ export default class EditAppBooking extends Component {
       }
     });
   };
-
+  }
   componentDidMount() {
     const id = this.props.match.params.id;
 

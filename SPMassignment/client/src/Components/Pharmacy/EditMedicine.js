@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default class EditMedicine extends Component {
   constructor(props) {
@@ -61,7 +62,20 @@ onChangePrice=(e)=>{
       expirationDate: expirationDate,
       price: price,
     };
-
+ //validation
+        if(
+            medicineName.length === 0||
+            type.length === 0||
+            quantity.length === 0 ||
+            expirationDate.length === 0 ||
+            price.length === 0 
+        ){
+           Swal.fire({
+            icon: 'error',
+            title: 'Warning',
+            text: 'Fill out all fields!',
+          })
+        }else{
     axios.put(`/pharmacy/update/${id}`, data).then((res) => {
       let path = "/homePharmacy";
       if (res.data.success) {
@@ -77,6 +91,7 @@ onChangePrice=(e)=>{
       }
     });
   };
+}
 
   componentDidMount() {
     const id = this.props.match.params.id

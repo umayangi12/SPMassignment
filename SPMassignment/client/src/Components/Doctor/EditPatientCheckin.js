@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import swal from "@sweetalert/with-react";
 
 export default class EditPatientCheckin extends Component {
   constructor(props) {
@@ -43,7 +44,28 @@ export default class EditPatientCheckin extends Component {
       med3: med3,
       med4: med4,
     };
+//phone number validation
+    const ph = /^[0-9\b]+$/;
+    if (!ph.test(String(phone)) || phone.length != 10) {
+      swal(
+        "Invalid Contact Number !",
+        "contact number should be valid pattern",
+        "error"
+      );
 
+    } else if (
+      paname.length === 0 ||
+      diagnose.length === 0 ||
+      ddate.length === 0 ||
+      phone.length === 0 ||
+      dname.length === 0 ||
+      med1.length === 0 ||
+      med2.length === 0 ||
+      med3.length === 0 ||
+      med4.length === 0
+    ) {
+      swal("Please fill all the details");
+    } else {
     axios.put(`/pcheck/update/${id}`, data).then((res) => {
       let path = "/HPC";
       if (res.data.success) {
@@ -63,6 +85,7 @@ export default class EditPatientCheckin extends Component {
       }
     });
   };
+}
 
   componentDidMount() {
     const id = this.props.match.params.id;
