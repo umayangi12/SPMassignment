@@ -21,7 +21,7 @@
     "@sweetalert/with-react": "^0.1.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
-    "bootstrap": "^5.2.0",
+    "bootstrap": "^5.3.1",
     "cloudinary": "^1.30.0",
     "concurrently": "^7.3.0",
     "config": "^3.2.5",
