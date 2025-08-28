@@ -16,7 +16,7 @@
     "classnames": "^2.2.6",
     "framer-motion": "^6.3.3",
     "js-file-download": "^0.4.12",
-    "jspdf": "^2.5.1",
+    "jspdf": "^3.0.2",
     "jspdf-autotable": "^3.5.25",
     "jwt-decode": "^2.2.0",
     "MERN_Authentication": "file:..",
